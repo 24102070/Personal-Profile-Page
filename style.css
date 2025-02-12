@@ -1,0 +1,271 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Poppins:wght@400;600&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background-size: cover;
+    background-image: url('assets/coverphoto.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    padding-bottom: 20px;
+}
+
+header a {
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+}
+
+header a:hover {
+    transform: translateY(-5px);
+}
+
+.cover-photo {
+    background-color: #4b0082;
+    background-size: cover;
+    background-position: center;
+    height: 50px;
+}
+
+.profile-section {
+    margin-top: -40px;
+}
+
+.profile-pic {
+    width: 210px;
+    height: 220px;
+    border-radius: 50%;
+    border: 4px solid white;
+}
+
+h1, h3{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin: 10px 0;
+    color:white;
+}
+
+ h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin: 10px 0;
+    color: #4b0082;
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+nav {
+    background-color: #6a0dad;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    transition: transform 0.3s ease-in-out, color 0.3s;
+}
+
+nav ul li a:hover {
+    transform: translateY(-5px);
+    color: #dcdcdc;
+}
+
+main {
+    padding: 20px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    background: white;
+    padding: 40px;
+    padding-left: 90px;
+    padding-right: 90px;
+    margin: 20px auto;
+    width: 70%;
+    margin-top: 45px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+}
+
+.skill-img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+
+details {
+    background: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-left: 8px solid #800080; 
+}
+
+details:hover {
+    background-color: #f0f0f0;
+}
+
+details summary {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+details summary:hover {
+    color: #4b0082;
+}
+
+details p {
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+}
+
+
+#skills, #interests {
+    margin-bottom: 30px;
+}
+
+#skills h2, #interests h2 {
+    color: #800080;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+}
+
+form label {
+    text-align: left;
+    margin: 10px 0 5px;
+    font-weight: 600;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Lato', sans-serif;
+}
+
+form button {
+    background-color: #6a0dad;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background 0.3s, transform 0.3s;
+}
+
+form button:hover {
+    background-color: #4b0082;
+    transform: translateY(-3px);
+}
+
+footer {
+    background-color: #4b0082;
+    color: white;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+footer h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+footer p {
+    font-size: 17px;
+}
+
+footer .social-icons {
+    margin-top: 10px;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+}
+.social-icons img {
+    width: 50px; 
+    height: 50px;
+    border-radius: 50%;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+}
+
+.copyright {
+    margin-top: 15px;
+    font-size: 12px;
+    opacity: 0.8;
+}
